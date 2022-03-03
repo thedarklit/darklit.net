@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-20622702-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-20622702-1');
+</script>
+
+    <title>darklit</title>
+    <meta charset="utf-8"/>
+    <link rel="icon" type="image/x-icon" href="/dl-assets/favicon.png">
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+    <link rel="stylesheet" href="/dl-assets/style.css?v5.3">
+
+</head>
+<body>
+
+
+<div id="console">
+  <span class="root">root@darklit:~</span>&nbsp;<div class="c1"><div class="type">hello. welcome to the experiment.</div></div>
+  <br>
+  <br>
+  <div class="c2">
+    <div class="type2">you may leave whenever you wish of course.</div>
+  </div>
+  <br>
+  <br>
+  <div class="c3">
+    <div class="type3">but if you would like to stay, i can show things you have never seen.</div>
+  </div>
+  <br>
+  <br>
+  <div class="c4">
+    <div class="type4">click <a href="https://darklit.net/next/">here to continue</a>.
+  </div>
+  </div>
+</div>
+
+<div id="mobile">
+
+  <span class="root">root@darklit:~</span>&nbsp;<div class="c1"><div class="type">hello. only the nerdy may pass.</div></div>
+  <br>
+  <br>
+  <div class="c2">
+    <div class="type2">please enter the hull number </div>
+  </div>
+  <br>
+  <br>
+  <div class="c3">
+    <div class="type3">of captain kirks enterprise:</div>
+  </div>
+  <br>
+  <br>
+  <!--div class="c4">
+    <div class="type4">click <a href="https://darklit.net/next/">here to continue</a>.
+  </div-->
+  <input type="text" id="test">
+  <br>
+  <br>
+  <input type="button" class="button" value="prove thy worthiness" onclick="z()">
+  <br>
+  <span id="err"></span>
+
+</div>
+
+
+
+
+
+<script>
+function pageRedirect(){
+ var delay = 2000; // time in milliseconds
+
+ // Display message
+ //document.getElementById("message").innerHTML = "you may pass...";
+ document.getElementById('err').innerHTML= 'you may pass...';
+
+ setTimeout(function(){
+  window.location = "https://darklit.net/creations";
+ },delay);
+
+}
+  function z()
+    {
+      var a=document.getElementById("test");
+      if((a.value=='ncc1701')||(a.value=='ncc-1701')||(a.value=='NCC 1701')||(a.value=='NCC-1701')||(a.value=='ncc 1701')||(a.value=='NCC1701')||(a.value=='Ncc1701')||(a.value=='Ncc 1701')||(a.value=='Ncc-1701'))
+    {
+      pageRedirect();
+    }
+    else
+    {
+      document.getElementById('err').innerHTML= 'wrong';
+    }
+
+  }
+</script>
+
+</div>
+
+</body>
+</html>

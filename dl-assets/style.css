@@ -1,0 +1,150 @@
+body{
+    background: black;
+    color: #0f0;
+    font-family: courier, monospace;
+    font-size:15.5px;
+  }
+
+#console {
+  display:none
+}
+#mobile {
+  display: inline-block;
+}
+#mobile input {
+  font-size:16px;
+  padding: 16px 42px;
+  line-height: 1.25;
+}
+span#err {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+input.button {
+  padding: 16px 42px;
+  line-height: 1.25;
+  background: black;
+  text-decoration: none;
+  color: #0f0;
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  position: relative;
+  transition: background-color 0.6s ease;
+  overflow: hidden;
+  border-radius: 0px;
+}
+
+@media screen and (min-width:800px) {
+  #console {
+    display: block;
+    width:800px;
+    height:600px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:200px;
+  }
+  #mobile {
+    display: none;
+  }
+}
+.root{
+  display: inline-block;
+  overflow: hidden;
+  color: white;
+}
+  a{
+    color: #0f0;
+  }
+  .c1{
+    display: inline-block;
+  }
+  .c2{
+    display: inline-block;
+  }
+  .c3{
+    display: inline-block;
+  }
+  .c4{
+    display: inline-block;
+  }
+  .c5{
+    display: inline-block;
+  }
+
+
+  div .type{
+      overflow: hidden;
+      /*border-right: .15em solid #0f0;*/
+      white-space: nowrap;
+      width: 0;
+      animation:
+        typing 1s steps(25, end) forwards;
+  }
+  div .type2{
+      overflow: hidden;
+      /*border-right: .15em solid #0f0;*/
+      white-space: nowrap;
+      width: 0;
+      animation:
+        typing 1.5s steps(20, end) forwards;
+      animation-delay: 1.5s;
+  }
+  div .type3{
+      overflow: hidden;
+      /*border-right: .15em solid #0f0;*/
+      white-space: nowrap;
+      width: 0;
+      animation:
+        typing 1.5s steps(20, end) forwards;
+      animation-delay: 3s;
+  }
+  div .type4{
+    overflow: hidden;
+    /*border-right: .15em solid #0f0;*/
+    white-space: nowrap;
+    width: 0;
+    animation:
+        typing 1.5s steps(30, end) forwards,
+        blink .75s infinite;
+    animation-delay: 5s;
+  }
+  div .type5{
+    overflow: hidden;
+
+    white-space: nowrap;
+    width: 0;
+    animation:
+        typing 1.5s steps(30, end) forwards,
+        blink .75s infinite;
+    animation-delay: 6.5s;
+  }
+  div .type6{
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation:
+        typing 1.5s steps(30, end) forwards,
+        blink .75s infinite;
+    animation-delay: 8s;
+  }
+  div .type7{
+    overflow: hidden;
+    border-right: .15em solid #0f0;
+    white-space: nowrap;
+    width: 0;
+    animation:
+        typing 1.5s steps(30, end) forwards,
+        blink .75s infinite;
+    animation-delay: 9.5s;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blink {
+    from { border-color: transparent }
+    to { border-color: #0f0; }
+/*GWF 2.26.22*/
